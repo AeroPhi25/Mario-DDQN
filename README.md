@@ -1,13 +1,13 @@
 # Mario-DDQN
 Contains sample code for training an AI that plays Mario.
 
-Description of mobile_mario.ipynb and non_mobile_mario.ipynb:
+# Description of mobile_mario.ipynb and non_mobile_mario.ipynb:
 
 Trains an AI to play Mario using DDQN and linear decay for epsilon.
 The only difference between these codes is the actions the agent can perform.
 The mobile agent can move in all directions, while the non-mobile agent can only move right and jump right.
 
-Instructions for mobile_mario.ipynb and non_mobile_mario.ipynb:
+# Instructions for mobile_mario.ipynb and non_mobile_mario.ipynb:
 1. Make sure the environment used is utilizing python 3.11.9
 2. Install Jupyter Notebook
 3. Install PyTorch with CUDA support
