@@ -44,10 +44,31 @@ For several different runs, change the save directory of the results in the last
 
 
 
-Description of Mario DDQN_NDDQN.py:
+# Description of Mario DDQN_NDDQN.py:
 
-"Description"
+This project trains two reinforcement-learning agents to play Super Mario Bros:
+- Dueling DQN (DDQN): baseline agent that relies on an ε-greedy policy with linear ε-decay.  
+- Noisy Dueling DQN (NDDQN):  adds learnable “noisy” layers that replace ε-greedy exploration.
+Each agent is tested with two action sets.
 
-Instructions for Mario DDQN_NDDQN.py:
+The goal is to see which exploration trick scores hiagher, learns faster and wastes fewer frames.
 
-"Instructions"
+
+# Instructions for Mario DDQN_NDDQN.py:
+
+1. Create a python 3.11 environment (if needed)
+        python -m venv .venv
+          # Windows: .venv\Scripts\activate
+          # macOS/Linux: source .venv/bin/activate
+2. Install Jypyter & Core Libraries
+        pip install notebook
+        pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118            #GPU build #(CPU-only?  Omit the --index-url flag.)
+3. Add project dependencies
+        pip install gym==0.26.2
+        pip install gym-super-mario-bros==7.4.0
+        pip install numpy matplotlib pygame tqdm
+   
+4. Run the training #number of episodes can be adjusted for better performance.
+5. Check results
+         #Checkpoints and replay buffers → ./checkpoints/
+         #Training curves and gameplay videos → ./outputs/      
