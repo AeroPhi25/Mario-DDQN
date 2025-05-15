@@ -46,5 +46,8 @@ For several different runs, change the save directory of the results in the last
 
 Description of Mario DDQN_NDDQN.py:
 
+"Description"
 
 Instructions for Mario DDQN_NDDQN.py:
+
+"Instructions"
